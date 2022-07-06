@@ -1,0 +1,40 @@
+.footer {
+    grid-area: footer;
+    background-color: $colorprincipal;
+    background-image: $gradientenavbar;
+    display: flex;
+    flex-flow: wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 8px 24px;
+
+    &__logo {
+        width: $widthlogo;
+        height: $heightgral;
+        padding: 4px;
+    }
+
+    &__info {
+        h3 {
+            padding: 4px 0px;
+            font: $titlefooter;
+        }
+        ul {
+            display: block;
+            list-style: none;
+            padding: 0 0 8px 0;
+            min-width: 10px;
+            li a {
+                color: $colorsecundario;
+                text-decoration: none;
+                text-align: justify;
+                letter-spacing: 1.2px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+        }
+    }
+}

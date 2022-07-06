@@ -1,0 +1,274 @@
+//intro
+.intro {
+    grid-area: intro;
+    min-height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url(..//img/bg/front-view-1800px.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    div {
+        height: 200px;
+        width: -webkit-fill-available;
+        background-color: $colorbgopacity;
+        color: $colorclaro;
+        text-align: center;
+        text-shadow: $colortextshadowintro;
+    }
+    h1 {
+        font: $titleintro;
+    }
+    p {
+        font: $subtitleintro;
+    }
+}
+
+//seccion 1 productos
+.seccion1 {
+    grid-area: seccion1;
+    display: grid;
+    grid-template-areas:"seccion1__title seccion1__title seccion1__title"
+                        "seccion1__item1 seccion1__item2 seccion1__item3"
+                        "btn1 btn1 btn1";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8% 75% 17%;
+    background-color: $colorclaro;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    
+    &__title {
+        grid-area: seccion1__title;
+        color: $colorsecundario;
+        text-align: center;
+        text-shadow: $colortextshadowseccion;
+        font:$titleseccion;
+    }
+
+    &__item1 {
+        grid-area: seccion1__item1;
+        width: $widthitemindex;
+        height: auto;
+        border-radius: $borderradiusfotos;
+        padding: 8px 16px;
+        justify-items: center;
+    }
+
+    &__item2 {
+        grid-area: seccion1__item2;
+        width: $widthitemindex;
+        height: auto;
+        border-radius: $borderradiusfotos;
+        padding: 8px 16px;
+        justify-items: center;
+    }    
+
+    &__item3 {
+        grid-area: seccion1__item3;
+        width: $widthitemindex;
+        height: auto;
+        border-radius: $borderradiusfotos;
+        padding: 8px 16px;
+        justify-items: center;
+    }    
+
+    .btn1 {
+        grid-area: btn1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0 16px 0px;
+        
+        a {
+            background-color: $colornegro;
+            min-width: 200px;
+            padding: 10px 30px;
+            border-radius: $borderradiusbtn;
+            color: $colorclaro;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+
+            &:hover {
+                color:$colornegro;
+                background-color:$colorhoverbt;
+            }
+        }
+    }        
+
+    
+}
+
+//Seccion 2 equipo
+
+.seccion2 {
+    grid-area: seccion2;
+    display: grid;
+    grid-template-areas:"seccion2__title seccion2__title seccion2__title"
+                                "seccion2__foto1 . seccion2__foto2"
+                                "seccion2__info1 . seccion2__info2"
+                                "btn2 btn2 btn2";
+    grid-template-columns: 48% 4% 48%;
+    grid-template-rows: 8% 72% 10% 10%;                      
+    background-color: $colorclaro;
+    justify-items: center;
+    align-items: center;
+    margin: 16px;
+    
+    &__title {
+        grid-area: seccion2__title;
+        color: $colorsecundario;
+        text-align: center;
+        text-shadow: $colortextshadowseccion;
+        font:$titleseccion;
+    }
+
+    &__foto1 {
+        grid-area: seccion2__foto1;
+        justify-content: center;
+        align-items: center;
+        width: $widthequipo;
+        height: $heightgral;
+        padding: 16px;
+        border-radius: $borderradiusfotos;
+    }
+
+    &__info1 {
+        grid-area: seccion2__info1;
+        justify-content: center;
+        align-items: center;
+        color:$colornegro;
+        margin: 5px 20px;
+        padding: 8px 8px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__foto2 {
+        grid-area: seccion2__foto2;
+        justify-content: center;
+        align-items: center;
+        width: $widthequipo;
+        height: $heightgral;
+        padding: 16px;
+        border-radius: 25px;
+
+    }
+
+    &__info2 {
+        grid-area: seccion2__info2;
+        justify-content: center;
+        align-items: center;
+        color:$colornegro;
+        margin: 5px 20px;
+        padding: 8px 8px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .btn2 {
+        grid-area: btn2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0 16px 0px;
+        
+        a {
+            background-color: $colornegro;
+            min-width: 200px;
+            padding: 10px 30px;
+            border-radius: $borderradiusbtn;
+            color: $colorclaro;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+
+            &:hover {
+                color:$colornegro;
+                background-color:$colorhoverbt;
+            }
+        }
+
+    }
+
+}
+
+//seccion 3 ubicacion e info
+
+.seccion3 {
+    grid-area: seccion3;
+    display: grid;
+    grid-template-areas:"seccion3__title seccion3__foto"
+                                "seccion3__article seccion3__foto"
+                                "btn3 seccion3__foto";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 8% auto 15%;
+    gap:8px;
+    background-color: $colorclaro;
+    justify-items: center;
+    align-items: center;
+    padding: 8px;
+    margin: 16px;
+
+    &__title {
+        grid-area: seccion3__title;
+        color: $colorsecundario;
+        text-align: center;
+        text-shadow: $colortextshadowseccion;
+        font:$titleseccion;
+    }
+
+    &__article {
+        p {
+            background-color: $colorblanco;
+            min-width: 200px;
+            height: 200px;
+            margin: 56px;
+            padding: 30px;
+            color: $colornegro;
+            text-align: left;
+            font-size: 24px;
+            align-items: center;
+        }
+
+    }
+
+    &__foto {
+        grid-area: seccion3__foto;
+        min-width: 65%;
+        height: auto;
+        justify-content: center;
+        border-radius: $borderradiusfotos;
+    }
+
+    .btn3 {
+        grid-area: btn3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0 16px 0px;
+        
+        a {
+            background-color: $colornegro;
+            min-width: 200px;
+            padding: 10px 30px;
+            border-radius: $borderradiusbtn;
+            color: $colorclaro;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+
+            &:hover {
+                color:$colornegro;
+                background-color:$colorhoverbt;
+            }
+        }
+
+    }
+
+}

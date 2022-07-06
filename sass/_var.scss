@@ -1,0 +1,45 @@
+//Colores
+$colorprincipal: #F09819;
+$coloracento: #EDDE5D;
+$colorsecundario: #422419;
+$colorhoverbt: #FCDEA4;
+$colorclaro: #E3E3E3;
+$colornegro: #000000;
+$colorblanco: #ffff;
+$colorbgopacity:rgba(0, 0, 0, 0.35);
+$colortextshadowintro:rgb(11, 11, 11) 2px 2px 1px;
+$colortextshadowseccion:rgb(210 197 197) 2px 2px;
+
+//gradientes
+$gradientebody: linear-gradient(315deg, $colornegro 0%, $colorsecundario 74%);
+$gradientenavbar: linear-gradient(135deg, $colorprincipal 40%, $coloracento 99%);
+
+//bordes
+$borderradiusheader: 14px;
+$borderradiusbtn: 7px;
+$borderradiusfotos: 25px;
+
+//tipografias
+$labelheader: bold 20px/1 'Poppins', sans-serif;
+$titleintro: normal 80px/2.8 'Pacifico', cursive;
+$subtitleintro: bold 40px/1 'Poppins', sans-serif;
+$titleseccion: bold 28px/1.6 'Poppins', sans-serif;
+$titlefooter: lighter 22px/1.6 'Pacifico',cursive; 
+
+//medidas
+    //logo
+$widthlogo: 10%;
+
+    //items index productos
+$widthitemindex: 95%;
+
+    //fotos index equipo
+$widthequipo: 70%;
+
+    //gral
+$heightgral: auto;
+
+//Meqia queries
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1200px;

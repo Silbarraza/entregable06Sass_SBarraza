@@ -1,0 +1,45 @@
+.header {
+    grid-area: header;
+    background-color: $colorprincipal;
+    background-image: $gradientenavbar;
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 24px;
+
+    &__logo {
+        width: $widthlogo;
+        height: $heightgral;
+        padding: 4px;
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 0 122px;
+            margin: 4px 0px;
+
+            li a {
+                display: inline-block; 
+                min-width: 150px;
+                padding: 6px 12px;
+                margin: 0 32px;
+                background-color: $colornegro;
+                border-radius: $borderradiusheader;
+                color:$colorclaro;
+                text-decoration: none;
+                text-align: center;
+                font:$labelheader;                      
+                letter-spacing: 1.6px;
+                &:hover {
+                    color: $colornegro;
+                    background-color:$colorhoverbt;
+                }
+
+            }
+        }
+    }
+}
