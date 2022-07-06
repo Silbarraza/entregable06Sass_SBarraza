@@ -11,18 +11,18 @@
     justify-content: center;
     align-items: center;
     div {
-        height: 200px;
+        height: 300px;
         width: -webkit-fill-available;
         background-color: $colorbgopacity;
         color: $colorclaro;
         text-align: center;
         text-shadow: $colortextshadowintro;
-    }
-    h1 {
-        font: $titleintro;
-    }
-    p {
-        font: $subtitleintro;
+        h1 {
+            font: $titleintro;
+        }
+        p {
+            font: $subtitleintro;
+        }
     }
 }
 
