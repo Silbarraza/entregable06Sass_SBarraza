@@ -31,3 +31,65 @@ body {
 
     @import 'footer';
 }
+
+//Media
+
+@media (max-width: $tablet) {
+    #grid-container {
+        display: grid;
+        grid-template-areas:"header"
+                            "main__index"
+                            "footer";
+        grid-template-columns: 100%; 
+        grid-template-rows: auto 85% auto;
+            
+        @import 'header';
+    
+        .main__index {
+            grid-area: main__index;
+            grid-template-areas:"intro"
+                            "seccion1"
+                            "seccion2"
+                            "seccion3";
+            grid-template-columns: 100%;
+            grid-template-rows: 500px 800px 900px 800px;
+            gap: 8px;
+    
+            @import 'secciones';
+        } 
+    
+        @import 'footer';
+    }
+    
+
+    
+}
+
+@media (max-width: $mobile) {
+    #grid-container {
+        display: grid;
+        grid-template-areas:"header"
+                            "main__index"
+                            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 72% auto;
+
+        @import 'header';
+    
+        .main__index {
+            grid-area: main__index;
+            grid-template-areas:"intro"
+                            "seccion1"
+                            "seccion2"
+                            "seccion3";
+            grid-template-columns: 100%;
+            grid-template-rows: 500px 800px 900px 800px;
+            gap: 8px;
+    
+            @import 'secciones';
+        } 
+    
+        @import 'footer';
+    }    
+
+}

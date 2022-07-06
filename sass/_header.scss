@@ -43,3 +43,59 @@
         }
     }
 }
+
+//Media
+
+@media (max-width: $tablet) {
+    .header {
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+
+        &__logo {
+            width: 15%;
+            height: auto;
+            padding: 0 16px;
+        }
+
+        &__menu {
+            ul li a {
+                min-width: 120px;
+                padding: 5px 5px;
+                margin: 5px;
+                font-size: 12px;    
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: $mobile) {
+    .header {
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+
+        &__logo {
+            width: 120px;
+            height: auto;
+            padding: 0 16px;
+        }
+
+        &__menu {
+            ul {
+                display: block;
+
+                li a {
+                min-width: 100px;
+                padding: 5px 5px;
+                margin: 5px;
+                font-size: 12px;
+                }    
+            }
+        }
+
+    }
+
+}

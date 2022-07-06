@@ -26,6 +26,35 @@
     }
 }
 
+//Media
+
+@media (max-width: $tablet) {
+    .intro {
+        height: 200px;
+        div h1 {
+            font-size: 50px;
+            letter-spacing: 2px; 
+        }
+        div p {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .intro {
+        min-height: 270px;
+        div h1 {
+            font-size: 50px;
+            letter-spacing: 2px; 
+        }
+        div p {
+            font-size: 22px;
+        }
+    }
+
+}
+
 //seccion 1 productos
 .seccion1 {
     grid-area: seccion1;
@@ -39,6 +68,7 @@
     justify-content: center;
     align-items: center;
     margin: 16px;
+    padding: 8px 0;
     
     &__title {
         grid-area: seccion1__title;
@@ -102,6 +132,65 @@
     
 }
 
+//Media
+@media (max-width: $tablet) {
+    .seccion1 {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 20px;
+            letter-spacing: 1.2px;
+        }
+    
+        &__item1 {
+            width: 50%;
+        }
+    
+        &__item2 {
+            width: 50%;            
+        }    
+    
+        &__item3 {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .seccion1 {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    
+        &__item1 {
+            width: 64%;
+        }
+    
+        &__item2 {
+            width: 64%;            
+        }    
+    
+        &__item3 {
+            width: 64%;
+        }
+
+        .btn1 {
+                        
+            a {
+                min-width: 120px;
+                padding: 8px 16px;
+            }
+    
+        }
+    }
+
+}
+
 //Seccion 2 equipo
 
 .seccion2 {
@@ -117,6 +206,7 @@
     justify-items: center;
     align-items: center;
     margin: 16px;
+    padding: 8px 0;
     
     &__title {
         grid-area: seccion2__title;
@@ -198,6 +288,54 @@
 
 }
 
+//Media
+@media (max-width: $tablet) {
+    .seccion2 {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 20px;
+            letter-spacing: 1.2px;
+        }
+    
+        &__foto1 {
+            width: 60%;
+        }
+        &__foto2 {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .seccion2 {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    
+        &__foto1 {
+            width: 65%;
+        }
+        &__foto2 {
+            width: 65%;
+        }
+
+        .btn2 {
+                        
+            a {
+                min-width: 120px;
+                padding: 8px 16px;
+            }
+    
+        }
+    }   
+}
+
 //seccion 3 ubicacion e info
 
 .seccion3 {
@@ -212,8 +350,8 @@
     background-color: $colorclaro;
     justify-items: center;
     align-items: center;
-    padding: 8px;
     margin: 16px;
+    padding: 8px 0;
 
     &__title {
         grid-area: seccion3__title;
@@ -244,6 +382,7 @@
         height: auto;
         justify-content: center;
         border-radius: $borderradiusfotos;
+        padding: 8px;
     }
 
     .btn3 {
@@ -272,3 +411,56 @@
     }
 
 }
+
+//Media
+@media (max-width: $tablet) {
+    .seccion3 {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 20px;
+            letter-spacing: 1.2px;
+        }
+    
+        &__foto {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .seccion3 {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        &__article {
+            p {
+                height: 150px;
+                margin: 8px;
+                padding: 30px;
+                font-size: 14px;
+            }
+    
+        }
+    
+        &__foto {
+            width: 55%;
+        }
+
+        .btn3 {
+                        
+            a {
+                min-width: 120px;
+                padding: 8px 16px;
+            }
+    
+        }
+    }
+}
+
